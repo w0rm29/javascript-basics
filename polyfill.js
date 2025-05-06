@@ -40,7 +40,12 @@ Array.prototype.myReduce = function(cb, initialValue){
     var acc = initialValue;
     
     for(let i=0; i<this.length; i++){
-        acc = acc ? cb(acc, this[i], i, this) : this[i];
+        if(acc !== undefined){
+            acc = cb(undefined, acc, this[i], i, this);
+        }
+        else{
+            acc = this[i];
+        }
     }
     return acc;
 };
@@ -54,3 +59,28 @@ Array.prototype.myReduce = function(cb, initialValue){
 // console.log(sum);
 
 // Question1: map vs forEach
+
+  
+
+/* Polyfills to do:
+
+    1) Promise.all, Promise.any
+    2) Call, Apply, bind
+    3) map, filter, reduce
+    4) debounce, throttle
+    5) currying
+
+*/
+
+/*
+    Interview Questions:
+        1) Array flatten
+        2) Closures
+        3) Promises
+        4) Accordian
+        5) Data Merge
+        6) Pub/Sub
+        7) Deep Clone
+        8) map vs forEach
+
+*/

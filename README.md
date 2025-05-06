@@ -5,3 +5,4 @@
 4) Functions
 5) Promises
 6) Map vs For Each
+7) Objects

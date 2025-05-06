@@ -23,6 +23,9 @@ display();
 // closures: Closure is when a function is able to remember and access its lexical scope even when that function is executing outside its lexical scope
 // in js, whenever we make a function it binds itself to its enviornment or its lexical scope
 
+// Closure: functon binded with its lexical enviornment
+// Scopes - remembers reference of the variable
+
 function subscribe(){
     var name = "Ragnorok";
     // closure

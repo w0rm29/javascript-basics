@@ -56,5 +56,5 @@ function curry(func){
 }
 
 const sum = (a,b,c) => a+b+c;
-const totalSum = curry(sum);
-console.log(totalSum(1)(2)(3));
+const totalSum = curry(sum)(1);
+console.log(totalSum(2)(3));
